@@ -1,0 +1,40 @@
+@media (max-width: 499px) {
+    #survey-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 500px) {
+    #survey-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #submit {
+        grid-column: 1 / 3; 
+        justify-self: center;
+    }
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#survey-form {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 2vh 5vw;
+    padding: 2vmax;
+    align-items: center;
+    border-radius: 5%;
+    background-color: rgba(25, 131, 202, 0.5);
+}
+
+/*
+#submit {
+    grid-column: 1 / 3; 
+    justify-self: center;
+}
+*/
