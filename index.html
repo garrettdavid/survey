@@ -3,11 +3,13 @@
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-      <link rel="stylesheet" href="main.css">
+      <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+      <link href="normalize.css" rel="stylesheet">
+      <link href="main.css" rel="stylesheet">
   </head>
   <body id="main">
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Description goes here</p>
+    <h1 id="title">Video Game Survey Form</h1>
+    <p id="description">Please complete this short survey. (Submitting doesn't actually do anything.)</p>
     <form id="survey-form">
       
       <label id="name-label" for="name">Name:</label>
@@ -16,39 +18,38 @@
       <label id="email-label" for="email">Email:</label>
       <input required id="email" type="email" placeholder="Email">
 
-      <label id="number-label" for="number">Number of pets:</label>
-      <input id="number" type="number" min="0" max="99" placeholder="0">
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="1" max="99" placeholder="0">
 
-      <p>Lorem ipsum</p>
+      <p>Which platforms do you own?</p>
+      <div>
+        <input type="checkbox" id="box1" value="x1">
+        <label for="box1">Xbox One</label>
+        <input type="checkbox" id="box2" value="ps4">
+        <label for="box2">PlayStation 4</label>
+        <input type="checkbox" id="box3" value="switch">
+        <label for="box3">Nintendo Switch</label>
+        <input type="checkbox" id="box4" value="pc">
+        <label for="box3">PC</label>
+      </div>
+
+      <p>Which platform do you prefer?</p>
       <select id="dropdown">
-        <option>Items</option>
-        <option>Go</option>
-        <option>Here</option>
+        <option>Xbox One</option>
+        <option>PlayStation 4</option>
+        <option>Nintendo Switch</option>
+        <option>PC</option>
       </select>
 
-      <p>What type of pet(s) do you have?</p>
+      <p>Do you play games on a mobile device (phone/tablet)?</p>
       <div>
-        <input type="checkbox" id="box1" value="cat">
-        <label for="box1">Cat</label>
-        <input type="checkbox" id="box2" value="dog">
-        <label for="box2">Dog</label>
-        <input type="checkbox" id="box3" value="fish">
-        <label for="box3">Fish</label>
-        <input type="checkbox" id="box4" value="other">
-        <label for="box3">Other</label>
+        <input type="radio" name="group" id="one" value="yes">
+        <label for="one">Yes</label>
+        <input type="radio" name="group" id="two" value="no">
+        <label for="two">No</label>
       </div>
 
-      <p>What type of food do you prefer to feed your pet(s)?</p>
-      <div>
-        <input type="radio" name="group" id="one" value="wet">
-        <label for="one">Wet</label>
-        <input type="radio" name="group" id="two" value="dry">
-        <label for="two">Dry</label>
-        <input type="radio" name="group" id="three" value="mixed">
-        <label for="three">Mixed</label>
-      </div>
-
-      <p>Lorem ipsum</p>
+      <p>What do you look for in a video game?</p>
       <textarea id="textarea"></textarea>
 
       <button id="submit" type="submit">Submit!</button>
